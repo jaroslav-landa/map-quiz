@@ -1,0 +1,34 @@
+Termín
+do obhajoby individuální semestrální práce (adventury)
+
+Odevzdání
+ve vlastním uživatelském repozitáři na GitLabu
+
+Vytvořte zeměpisný kvíz pro ČR se slepou mapou
+(hra na způsob Traveler IQ Challenge)
+
+Po spuštění aplikace se uživateli zobrazí label s názvem místa, u kterého má hádat pozici na mapě.
+Poté, co uživatel klikne na mapu, aplikace libovoným způsobem zobrazí jak přesný měl uživatel odhad.
+Aplikace umožní uživateli hádat další místa.
+Připravte alespoň 10 míst.
+Místa se generují náhodně a neopakují se během jedné hry.
+Aplikace počítá libovolným způsobem skóre uživatele a zobrazuje jej na vhodném místě.
+
+Použijte metodu addEventHandler na ImagView, které si předáte z FXML
+
+img.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+	@Override public void handle(MouseEvent event) {
+		...
+		System.out.println("X "+event.getX()+", Y "+event.getY());
+		...
+		event.consume();
+	}
+});
+
+Slepá mapa https://en.m.wikipedia.org/wiki/File:Relief_Map_of_Czech_Republic.png
+
+Bonus a alternativy
+
++2 body za zobrazení fotek míst, které uživatel hádá.
+Můžete vytvořit i variantu s mapou Evropy nebo světa.
+
